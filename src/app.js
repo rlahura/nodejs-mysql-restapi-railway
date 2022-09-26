@@ -3,11 +3,15 @@
 import express from 'express';
 import employeesRoutes from './routes/employees.routes.js';
 import ping from './routes/index.routes.js';
+import { dailyLog } from './dailyLog.js';
 
 const app = express();
 //**IMPORTANTE **/
 //Para poder interpretar valores JSON entrantes
 app.use(express.json());
+
+//86400000 es un dia
+dailyLog();
 
 app.use(ping);
 //'/api' es un prefijo para todas estas rutas

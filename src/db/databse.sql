@@ -10,3 +10,10 @@ INSERT INTO employee VALUES
 (2, 'Henry', 2000),
 (3, 'Sam', 2500),
 (4, 'Max', 1500);
+
+
+CREATE TABLE logs (
+  id INT(11) NOT NULL AUTO_INCREMENT,
+  time VARCHAR(45) DEFAULT NULL,
+  PRIMARY KEY (id)
+)
