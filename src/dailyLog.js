@@ -8,5 +8,5 @@ export const dailyLog = () => {
 
   console.log(rows.affectedRows);
   //lo quiero registrar cada 30 minutos
- }, 10000);
+ }, 1800000);
 };
