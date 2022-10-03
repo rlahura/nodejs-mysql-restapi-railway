@@ -9,6 +9,9 @@ const app = express();
 //**IMPORTANTE **/
 //Para poder interpretar valores JSON entrantes
 app.use(express.json());
+//CORS
+const cors = require('cors');
+app.use(cors());
 
 //86400000 es un dia
 dailyLog();
