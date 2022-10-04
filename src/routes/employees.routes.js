@@ -15,7 +15,7 @@ router.get('/employees', getEmployees);
 //el /:id y asi poder ejecutar la funcion
 router.get('/employees/:id', getEmployee);
 
-router.get('/login', getLogin);
+router.post('/login', getLogin);
 
 router.post('/employees', createEmployees);
 

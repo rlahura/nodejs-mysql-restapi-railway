@@ -12,6 +12,7 @@ app.use(express.json());
 // //CORS
 // const cors = require('cors');
 // app.use(cors());
+//Middleware
 
 //86400000 es un dia
 dailyLog();

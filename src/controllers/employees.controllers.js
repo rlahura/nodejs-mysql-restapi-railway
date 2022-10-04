@@ -106,7 +106,10 @@ export const updateEmployee = async (req, res) => {
 
 //api login
 export const getLogin = async (req, res) => {
+ const { username, password } = req.body;
  res.send({
   token: 'test123',
+  username,
+  password,
  });
 };
